@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this site for Currency converter">
+  <link rel="icon" href="./photos/favcion.webp" >
+    <title>Currency Converter</title>
+    <!-- css file -->
+     <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheet" href="second.css"> -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Currency converter appliaction</h1>
+        </div>
+        
+    </header>
+    <main>
+        <div class="container">
+                <form class="forminput" id="form">
+                    <input type="number"  id="number"  required>
+                    <select id="selectfrom" required >
+                        <option value="" disabled selected>Select a Currency</option>
+                        <option value="USD">USD</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="QAR">QAR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                    <select id="selectto" required>
+                        <option value="" disabled selected>Select a Currency</option>
+                        <option value="USD">USD</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="QAR">QAR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                    
+                    <input type="submit" value="convert" id="btn">
+                </form>
+
+        </div>
+    </main>
+    <section>
+        <div class="container">
+            <h2>conversion now here</h2>
+            <h3 class="date"></h3>
+            <p class="result" ></p>
+            <p class="result"></p>
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>all copy rights reserved &copy; <span id="year"></span> </p>
+            <p> designed by mahmoud ahmed</p>
+        </div>
+    </footer>
+    <!-- sweel alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- master js file -->
+    <script src="master.js"></script>
+</body>
+</html>

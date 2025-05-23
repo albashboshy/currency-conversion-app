@@ -1,0 +1,212 @@
+/* all styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgb(0, 120, 220);
+}
+
+/* all global fonts */
+
+:root {
+  --fontSize: 18px;
+  --fontLarge: 24px;
+  --backgroundColor: #aaa;
+  --primary: rgb(0, 120, 220);
+  --buttonBg: rgb(0, 89, 255);
+  --headerBg: rgb(0, 170, 255); /* Fixed invalid rgb */
+
+  --backgroundColor: #aaa;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+/* header start  */
+
+header {
+  background-color: rgb(0, 170, 270);
+  display: flow-root;
+  color: white;
+  padding: 10px;
+  text-transform: capitalize;
+ 
+ 
+}
+
+/* header end */
+
+/* start main style */
+
+main {
+  padding: 10px;
+  display: flow-root;
+}
+main .container {
+  padding: 20px 10px;
+}
+.container .forminput {
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 5px solid white;
+}
+.container .forminput * {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 5px;
+  border: none;
+  height: 30px;
+}
+
+.container .forminput *:hover {
+  border-style: none;
+}
+.container #btn {
+  background-color: rgb(0, 89, 255);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.container  #btn:hover{
+  cursor: pointer;
+ 
+}
+/* end main style */
+
+/* start section  */
+
+section {
+  padding: 20px 10px;
+}
+section .container{
+  margin: 15px auto;
+  height: auto;
+  padding: 15px ;
+}
+.result , .date{
+  margin: 10px auto;
+  border: 5px solid white;
+  padding: 10px ;
+  border-radius: 5px;
+ 
+ 
+}
+.date{
+  border: none;
+}
+/* end  section  */
+
+/* start footer */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(0, 170, 270);
+}
+#year{
+  color: red;
+}
+
+footer .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: var(--fontSize);
+  color: white;
+  padding: 15px 20px;
+  
+  text-transform: capitalize;
+}
+/* end  footer */
+/* responsive designed  */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .container #btn{
+    padding: 15px ;
+    height: auto;
+    
+  }
+  h1 {
+    font-size: var(--fontSize);
+  }
+  
+  .result{
+    color: white;
+    padding: 15px ;
+    margin: 25px auto;
+    font-weight: bold;
+    font-size: var(--fontSize);
+    text-transform: capitalize;
+  }
+  section .container{
+    margin: 15px auto 30px;
+    min-height: 450px;
+    scroll-behavior: smooth;
+  }
+  footer .container{
+  display: block;
+  
+  
+  }
+  footer .container p{
+    padding: 10px ;
+  }
+}
+@media (min-width: 768px) {
+  header .container {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 0;
+  }
+  main .container {
+    width: 100%;
+    margin: auto;
+  }
+  main .container .forminput * {
+    font-size: var(--fontLarge);
+    padding: 10px;
+    height: auto;
+  }
+
+  section .container {
+    text-align: center;
+    margin: 15px auto 70px;
+  }
+  .result{
+    color: white;
+    font-weight: bold;
+    margin: 40px auto;
+    font-size: var(--fontLarge);
+    text-transform: capitalize;
+    padding: 25px 0;
+  }
+  footer .container{
+    font-size: var(--fontLarge);
+    padding: 20px;
+  }
+}
