@@ -13,7 +13,7 @@ setInterval( ()=>{
 
 
 // place holder for result and rate 
- result[0].innerHTML="result will be  here"
+ result[0].innerHTML="result of conversion  will be  here"
   result[1].innerHTML="daily rate for exchange will be here"
 //  object to collect data
 
