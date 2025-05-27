@@ -46,16 +46,16 @@ let getdata = {};
 selfrom.addEventListener("change", (el) => {
   handlefrom(el.target.value);
 
-  console.log(data.from);
+ 
 });
 
 selto.addEventListener("change", (el) => {
   handleto(el.target.value);
-  console.log(data.to);
+
 });
 num.addEventListener("change", function (el) {
   payment(el.target.value);
-  console.log(data.amount);
+
 });
 
 form.addEventListener("submit", function (el) {
@@ -66,7 +66,7 @@ form.addEventListener("submit", function (el) {
     title: "Convert",
     text: `Are you sure you want to convert ${data.amount} ${data.from} to ${data.to}?`,
     showCancelButton: true,
-    confirmButtonText: "Yes, convert it!",
+    confirmButtonText: "Ok",
     cancelButtonText: "Cancel",
   }).then((answer) => {
     if (answer.isConfirmed) {
@@ -84,6 +84,7 @@ form.addEventListener("submit", function (el) {
             data.amount * getdata.conversion_rates[data.to]
           ).toFixed(2)}`;
             result[1].innerHTML=`the rate today is 1 ${data.from} to ${getdata.conversion_rates[data.to]} ${data.to}`
+            console.log(getdata.conversion_rates)
                refresh()
         });
     }
@@ -93,3 +94,4 @@ form.addEventListener("submit", function (el) {
 
 
 year.innerHTML=new Date().getFullYear()
+
