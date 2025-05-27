@@ -84,7 +84,7 @@ form.addEventListener("submit", function (el) {
             data.amount * getdata.conversion_rates[data.to]
           ).toFixed(2)}`;
             result[1].innerHTML=`the rate today is 1 ${data.from} to ${getdata.conversion_rates[data.to]} ${data.to}`
-            console.log(getdata.conversion_rates)
+            
                refresh()
         });
     }
