@@ -70,13 +70,13 @@ form.addEventListener("submit", function (el) {
     cancelButtonText: "Cancel",
   }).then((answer) => {
     if (answer.isConfirmed) {
-      console.log("yes confirmed");
+  
       fetch(
         `https://v6.exchangerate-api.com/v6/8c14a4ca3fb795521ba9348c/latest/${data.from}`
       )
         .then((res) => res.json())
         .then((getdata) => {
-          console.log(getdata.conversion_rates[data.to]);
+        
 
           result[0].innerHTML= `the total amount of   ${data.amount} in ${
             data.from
