@@ -54,7 +54,8 @@ selto.addEventListener("change", (el) => {
 
 });
 num.addEventListener("change", function (el) {
-  payment(el.target.value);
+  el.target.value < 1? el.target.value =1:payment(el.target.value);
+  
 
 });
 
