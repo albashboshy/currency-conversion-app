@@ -137,19 +137,27 @@ footer {
 #year{
   color: red;
 }
+footer .container{
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
 
-footer .footer-container {
+}
+footer  .footer-container {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
+    padding: 18px;
+    
+
+
 
 
 }
 .footer-container p{
-  
-    font-size: clamp(16px, 2.5vw, 20px);
+    text-align: center;
+    font-size: clamp(16px, 2vw, 20px);
     text-transform: capitalize  ;
 }
 /* end  footer */
@@ -220,8 +228,13 @@ footer .footer-container {
     text-transform: capitalize;
     padding: 25px 0;
   }
-  footer .container{
+  /* footer .footer-container{
     font-size: var(--fontLarge);
     padding: 20px;
+  } */
+}
+@media (max-width:768px) {
+  .footer-container{
+    flex-direction: column;
   }
 }
