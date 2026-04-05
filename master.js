@@ -79,7 +79,7 @@ form.addEventListener("submit", function (el) {
         .then((getdata) => {
         
 
-          result[0].innerHTML= `the total amount of   ${data.amount} in ${
+          result[0].innerHTML= `the total amount of ${data.amount} in ${
             data.from
           }  by ${data.to} is = ${(
             data.amount * getdata.conversion_rates[data.to]

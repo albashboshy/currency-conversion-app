@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,11 @@
     </header>
     <main>
         <div class="container">
+             <h3 class="date"></h3>
+        </div>
+        <div class="container">
                 <form class="forminput" id="form">
-                    <input type="number"  id="number"  required placeholder="Enter Amount  & من فضلك ادخل المبلغ المطلوب تحويله  ">
+                    <input type="number"  id="number"  required placeholder="Enter Amount">
                     <select id="selectfrom" required >
                         <option value="" disabled selected>Select a Currency</option>
                         <option value="USD">USD</option>
@@ -72,16 +75,18 @@
     </main>
     <section>
         <div class="container">
-            <h2>conversion now here</h2>
-            <h3 class="date"></h3>
-            <p class="result" ></p>
+          
+           
+            <p class="result"></p>
             <p class="result"></p>
             </div>
     </section>
     <footer>
         <div class="container">
-            <p>all copy rights reserved &copy; <span id="year"></span> </p>
-            <p> designed by mahmoud ahmed</p>
+            <div class="footer-container">
+                  <p> &copy;<span id="year"></span> all copy rights reserved</p>
+            <p> designed by &hearts; mahmoud ahmed &hearts; </p>
+            </div>
         </div>
     </footer>
     <!-- sweet alert  -->
