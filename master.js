@@ -8,7 +8,7 @@ let year = document.querySelector("#year")
 let date =document.querySelector(".date")
 
 setInterval( ()=>{
-  date.innerHTML=` Date && Time  ${new Date().toLocaleString()} `
+  date.innerHTML =` ${new Date().toLocaleString()} `
 },1000)
 
 
@@ -79,12 +79,12 @@ form.addEventListener("submit", function (el) {
         .then((getdata) => {
         
 
-          result[0].innerHTML= `the total amount of ${data.amount} in ${
+          result[0].innerHTML= ` ${data.amount}  ${
             data.from
           }  by ${data.to} is = ${(
             data.amount * getdata.conversion_rates[data.to]
           ).toFixed(2)}`;
-            result[1].innerHTML=`the rate today is 1 ${data.from} to ${getdata.conversion_rates[data.to]} ${data.to}`
+            result[1].innerHTML=`one  ${data.from} equal to = ${getdata.conversion_rates[data.to]} ${data.to}`
             
                refresh()
         });

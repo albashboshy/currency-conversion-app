@@ -106,12 +106,18 @@ main .container {
 section {
   padding: 20px 10px;
 }
+.container .time{
+  text-align: center;
+  font-size: clamp(16px, 2.5vw, 24px);
+  margin-bottom: 16px;
+}
 .container .date{
  text-align: center;
  font-size: clmap(16px, 2.5vw, 24px);
 
 
 }
+
 .container .result{
 
   font-size: clamp(12px, 2.5vw, 20px);
